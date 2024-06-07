@@ -1,0 +1,185 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+:root{
+    font-size: 2vw;
+}
+.nav-bar{
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    color: blanchedalmond;
+    width: 100vw;
+    height: 2rem;
+}
+.nav-bar .menu{
+    text-decoration: none;
+    padding: 0.5rem;
+    font-size: 0.7rem;
+
+}
+.menu:hover{
+    background-color: #ffe4c4;
+    color: black;
+}
+.burg-icon{
+    display: none;
+}
+.burg{
+    display: none;
+}
+.b-menu{
+    display: none;
+}
+.welcome_page{
+    h1{
+        font-size: 2rem;
+        margin: 2rem 0rem 0rem 6rem;
+    }
+    h3{
+        font-size: 6rem;
+        margin: 2rem 0rem 0rem 8rem;
+            font-family: "Great Vibes", cursive;
+            font-weight: 400;
+            font-style: normal;
+            color: rgb(180, 164, 74);
+          
+          
+    }
+}
+.welcome_img{
+    position: absolute;
+    top: 4rem;
+    right: 4rem;
+    img{
+        width: 10rem;
+
+    }
+}
+.welcome_msg{
+    text-align: center;
+    width: 30rem;
+    font-size: 1rem;
+    margin: 2rem 3rem 3rem 9rem;
+    font-family: sans-serif;
+    color: rgba(0, 0, 0, 0.672);
+    button{
+        width: 5.5rem;
+        height: 1.3rem;
+        border-radius: 0.8rem;
+        border: none;
+        background-color: rgba(220, 218, 215, 0.997);
+        color: rgb(120, 108, 36);
+        margin-top: 1rem;
+        font-size: 0.5rem;
+    }
+    button:hover{
+        background-color: rgba(139, 127, 47, 0.693);
+        color: black;
+    }
+}
+@media screen and (max-width:500px) {
+    .menu{
+        display: none;
+    }
+    .nav-bar{
+        height: 8rem;
+        gap: 100px;
+        background-color: black;
+    }
+    .burg{
+        display: block;
+        input{
+            margin-top: 2.6rem;
+            width: 25rem;
+            height: 3rem;
+        }
+    }
+    .burg-icon{
+        width: 2rem;
+        height: 2rem;
+        background-color: black;
+        border: none;
+        margin-top: 2.6rem;
+        display: block;
+    }
+    .burg-icon img{
+        width: 3rem;
+        height: 3rem;
+    }
+    .burg-menu-div{
+        width: 35vw;
+        height: 93dvh;
+        background-color: rgb(206, 203, 198);
+        display: flex;
+        float: left;
+        flex-direction: column;
+        justify-content: space-around;
+        position: absolute;
+    
+        a{
+            display: block;
+            text-decoration: none;
+            font-size: 2rem;
+            text-align: center;
+            padding: 1rem;
+            color: rgb(111, 96, 10);
+        }
+        a:hover{
+            background-color: black;
+            color: bisque;
+        }
+    }
+    .burg-menu-div.on{
+        
+        width: 0;
+        transition: 0.3s;
+        a{
+            display: none;
+        }
+
+    }
+    .burg-menu-div.off{
+   
+        width: 35vw;
+        transition: 0.3s;
+        a{
+            display: block;
+        }
+    }
+
+    .welcome_page{
+        h1{
+            font-size:4rem;
+            margin: 9rem 1rem 1rem 10rem;
+        }
+        h3{
+            font-size: 11rem;
+            margin-left: 1rem;
+            margin-top: 3rem;
+        }
+    }
+    .welcome_img{
+        position: relative;
+        margin-left: 18rem;
+        z-index: -1;
+        margin-top: -4rem;
+        img{
+            width: 25rem;
+        }
+    }
+    .welcome_msg{
+        margin-top: 8rem;
+        margin-left: 4.4rem;
+        font-size: 2.5rem;
+        width: 40rem;
+        button{
+            width: 20rem;
+            height: 4rem;
+            font-size: 2rem;
+            margin-top: 4rem;
+        }
+    }
+ 
+}
